@@ -17,6 +17,8 @@ class APIRepository {
 
   Future<ApiResult<List<Movie>>> fetchMovieList() async {
     try {
+      // await Future.delayed(Duration(seconds: 5));
+
       final response = await dioClient
           .get("movie/popular", queryParameters: {"api_key": _apiKey});
       List<Movie> movieList = MovieResponse.fromJson(response).results;

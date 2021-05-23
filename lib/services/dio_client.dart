@@ -6,7 +6,8 @@ import 'package:flutter/foundation.dart';
 const _defaultConnectTimeout = Duration.millisecondsPerMinute;
 const _defaultReceiveTimeout = Duration.millisecondsPerMinute;
 
-class DioClient {
+class 
+DioClient {
   final String baseUrl;
 
   Dio _dio;

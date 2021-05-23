@@ -13,12 +13,19 @@ class MovieCubit extends Cubit<ResultState<List<Movie>>> {
         super(Idle());
 
   loadMovies() async {
+    
     emit(ResultState.loading());
+
     ApiResult<List<Movie>> apiResult = await apiRepository.fetchMovieList();
+    
     apiResult.when(success: (List<Movie> data) {
+    
       emit(ResultState.data(data: data));
+    
     }, failure: (NetworkExceptions error) {
+    
       emit(ResultState.error(error: error));
+      
     });
   }
 }
