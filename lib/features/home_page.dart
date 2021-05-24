@@ -2,6 +2,7 @@ import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:network_handling/utils/dialog_utils.dart';
+import 'package:network_handling/utils/function_utils.dart';
 
 import '../api_repository.dart';
 import '../bloc/movie/movie_cubit.dart';
@@ -18,7 +19,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    _refreshMovies();
+    performNetworkRequest(() => _refreshMovies(), context);
   }
 
   @override
@@ -52,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          _refreshMovies();
+          performNetworkRequest(() => _refreshMovies(), context);
         },
         child: const Icon(Icons.navigation),
         backgroundColor: Colors.green,
@@ -68,7 +69,9 @@ class _MyHomePageState extends State<MyHomePage> {
   //   );
   // }
 
-  _refreshMovies() async {
+  
+
+  _refreshMovies() {
     // var connectivityResult = await (Connectivity().checkConnectivity());
 
     // if (connectivityResult == ConnectivityResult.none) {
@@ -78,8 +81,8 @@ class _MyHomePageState extends State<MyHomePage> {
     //   DialogUtil.instance.showAlertBasic(context);
     // } else {
     //   setState(() {
-        context.bloc<MovieCubit>().loadMovies();
-      // });
+    context.bloc<MovieCubit>().loadMovies();
+    // });
     // }
   }
 

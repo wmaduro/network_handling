@@ -12,9 +12,9 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Future<void> initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 2), () {
-      _pressFloatingActionbutton();
-    });
+    // Future.delayed(Duration(seconds: 2), () {
+    //   _pressFloatingActionbutton();
+    // });
   }
 
   _pressFloatingActionbutton() async {
@@ -26,10 +26,10 @@ class _SplashPageState extends State<SplashPage> {
     //     '/no_connection',
     //   );
     // } else {
-      Navigator.pushNamed(
-        context,
-        '/home',
-      );
+    // Navigator.pushNamed(
+    //   context,
+    //   '/login',
+    // );
     // }
   }
 
@@ -37,8 +37,33 @@ class _SplashPageState extends State<SplashPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('Hi, Wellcome!'),
-      ),
+          child: Column(
+        children: [
+          SizedBox(
+            height: 200,
+          ),
+          Text('Hi, Wellcome!'),
+          SizedBox(
+            height: 200,
+          ),
+          FlatButton(
+              onPressed: () {
+                Navigator.pushNamed(
+                  context,
+                  '/home',
+                );
+              },
+              child: Text('Home')),
+          FlatButton(
+              onPressed: () {
+                Navigator.pushNamed(
+                  context,
+                  '/login',
+                );
+              },
+              child: Text('Login'))
+        ],
+      )),
     );
   }
 }

@@ -10,10 +10,16 @@ class DialogUtil {
     // this._addInterceptor(InterceptorApi());
   }
 
-  showAlertBasic(BuildContext context,
+  showAlertNoConnection(BuildContext context) {
+    _showAlertBasic(context,
+        title: 'Disconnected!',
+        list: [Text('Please, check your internet access before continue.')]);
+  }
+
+  _showAlertBasic(BuildContext context,
       {String title = 'Attention!',
       List<Widget> list,
-      String textButtonOk = 'Ok'}) {
+      String textButtonOk = 'Ok'}) async {
     if (list == null) {
       list = [Text('Somthing went wrong!')];
     }

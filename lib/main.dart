@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:network_handling/api_repository.dart';
 import 'package:network_handling/bloc/movie/movie.dart';
 import 'package:network_handling/controllers/connection_controller.dart';
+import 'package:network_handling/features/login_page.dart';
 import 'package:network_handling/features/no_connetion_page.dart';
 import 'package:network_handling/model/movie_response.dart';
 import 'package:network_handling/services/network_exceptions.dart';
@@ -62,8 +63,6 @@ class _MyAppState extends State<MyApp> {
   //   _connectiveSubscription.cancel();
   // }
 
-
-
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
@@ -86,6 +85,7 @@ class _MyAppState extends State<MyApp> {
           //  '/': (context) => MyHomePage(),
           '/': (context) => SplashPage(),
           '/home': (context) => MyHomePage(),
+          '/login': (context) => LoginPage(),
           // '/no_connection': (context) => NoConnectionPage(),
         },
       ),
