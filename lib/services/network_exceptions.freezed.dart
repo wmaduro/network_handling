@@ -56,6 +56,11 @@ class _$NetworkExceptionsTearOff {
   }
 
 // ignore: unused_element
+  ConnectTimeout connectTimeout() {
+    return const ConnectTimeout();
+  }
+
+// ignore: unused_element
   Conflict conflict() {
     return const Conflict();
   }
@@ -119,6 +124,7 @@ mixin _$NetworkExceptions {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -139,6 +145,7 @@ mixin _$NetworkExceptions {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -160,6 +167,7 @@ mixin _$NetworkExceptions {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -180,6 +188,7 @@ mixin _$NetworkExceptions {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -257,6 +266,7 @@ class _$RequestCancelled implements RequestCancelled {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -275,6 +285,7 @@ class _$RequestCancelled implements RequestCancelled {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -298,6 +309,7 @@ class _$RequestCancelled implements RequestCancelled {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -327,6 +339,7 @@ class _$RequestCancelled implements RequestCancelled {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -345,6 +358,7 @@ class _$RequestCancelled implements RequestCancelled {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -368,6 +382,7 @@ class _$RequestCancelled implements RequestCancelled {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -438,6 +453,7 @@ class _$UnauthorizedRequest implements UnauthorizedRequest {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -456,6 +472,7 @@ class _$UnauthorizedRequest implements UnauthorizedRequest {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -479,6 +496,7 @@ class _$UnauthorizedRequest implements UnauthorizedRequest {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -508,6 +526,7 @@ class _$UnauthorizedRequest implements UnauthorizedRequest {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -526,6 +545,7 @@ class _$UnauthorizedRequest implements UnauthorizedRequest {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -549,6 +569,7 @@ class _$UnauthorizedRequest implements UnauthorizedRequest {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -618,6 +639,7 @@ class _$BadRequest implements BadRequest {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -636,6 +658,7 @@ class _$BadRequest implements BadRequest {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -659,6 +682,7 @@ class _$BadRequest implements BadRequest {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -688,6 +712,7 @@ class _$BadRequest implements BadRequest {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -706,6 +731,7 @@ class _$BadRequest implements BadRequest {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -729,6 +755,7 @@ class _$BadRequest implements BadRequest {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -818,6 +845,7 @@ class _$NotFound implements NotFound {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -836,6 +864,7 @@ class _$NotFound implements NotFound {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -859,6 +888,7 @@ class _$NotFound implements NotFound {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -888,6 +918,7 @@ class _$NotFound implements NotFound {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -906,6 +937,7 @@ class _$NotFound implements NotFound {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -929,6 +961,7 @@ class _$NotFound implements NotFound {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -1003,6 +1036,7 @@ class _$MethodNotAllowed implements MethodNotAllowed {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -1021,6 +1055,7 @@ class _$MethodNotAllowed implements MethodNotAllowed {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -1044,6 +1079,7 @@ class _$MethodNotAllowed implements MethodNotAllowed {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -1073,6 +1109,7 @@ class _$MethodNotAllowed implements MethodNotAllowed {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -1091,6 +1128,7 @@ class _$MethodNotAllowed implements MethodNotAllowed {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -1114,6 +1152,7 @@ class _$MethodNotAllowed implements MethodNotAllowed {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -1184,6 +1223,7 @@ class _$NotAcceptable implements NotAcceptable {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -1202,6 +1242,7 @@ class _$NotAcceptable implements NotAcceptable {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -1225,6 +1266,7 @@ class _$NotAcceptable implements NotAcceptable {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -1254,6 +1296,7 @@ class _$NotAcceptable implements NotAcceptable {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -1272,6 +1315,7 @@ class _$NotAcceptable implements NotAcceptable {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -1295,6 +1339,7 @@ class _$NotAcceptable implements NotAcceptable {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -1365,6 +1410,7 @@ class _$RequestTimeout implements RequestTimeout {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -1383,6 +1429,7 @@ class _$RequestTimeout implements RequestTimeout {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -1406,6 +1453,7 @@ class _$RequestTimeout implements RequestTimeout {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -1435,6 +1483,7 @@ class _$RequestTimeout implements RequestTimeout {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -1453,6 +1502,7 @@ class _$RequestTimeout implements RequestTimeout {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -1476,6 +1526,7 @@ class _$RequestTimeout implements RequestTimeout {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -1546,6 +1597,7 @@ class _$SendTimeout implements SendTimeout {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -1564,6 +1616,7 @@ class _$SendTimeout implements SendTimeout {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -1587,6 +1640,7 @@ class _$SendTimeout implements SendTimeout {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -1616,6 +1670,7 @@ class _$SendTimeout implements SendTimeout {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -1634,6 +1689,7 @@ class _$SendTimeout implements SendTimeout {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -1657,6 +1713,7 @@ class _$SendTimeout implements SendTimeout {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -1678,6 +1735,193 @@ class _$SendTimeout implements SendTimeout {
 
 abstract class SendTimeout implements NetworkExceptions {
   const factory SendTimeout() = _$SendTimeout;
+}
+
+/// @nodoc
+abstract class $ConnectTimeoutCopyWith<$Res> {
+  factory $ConnectTimeoutCopyWith(
+          ConnectTimeout value, $Res Function(ConnectTimeout) then) =
+      _$ConnectTimeoutCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class _$ConnectTimeoutCopyWithImpl<$Res>
+    extends _$NetworkExceptionsCopyWithImpl<$Res>
+    implements $ConnectTimeoutCopyWith<$Res> {
+  _$ConnectTimeoutCopyWithImpl(
+      ConnectTimeout _value, $Res Function(ConnectTimeout) _then)
+      : super(_value, (v) => _then(v as ConnectTimeout));
+
+  @override
+  ConnectTimeout get _value => super._value as ConnectTimeout;
+}
+
+/// @nodoc
+class _$ConnectTimeout implements ConnectTimeout {
+  const _$ConnectTimeout();
+
+  @override
+  String toString() {
+    return 'NetworkExceptions.connectTimeout()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is ConnectTimeout);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object>({
+    @required TResult requestCancelled(),
+    @required TResult unauthorizedRequest(),
+    @required TResult badRequest(),
+    @required TResult notFound(String reason),
+    @required TResult methodNotAllowed(),
+    @required TResult notAcceptable(),
+    @required TResult requestTimeout(),
+    @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
+    @required TResult conflict(),
+    @required TResult internalServerError(),
+    @required TResult notImplemented(),
+    @required TResult serviceUnavailable(),
+    @required TResult noInternetConnection(),
+    @required TResult formatException(),
+    @required TResult unableToProcess(),
+    @required TResult defaultError(String error),
+    @required TResult unexpectedError(),
+  }) {
+    assert(requestCancelled != null);
+    assert(unauthorizedRequest != null);
+    assert(badRequest != null);
+    assert(notFound != null);
+    assert(methodNotAllowed != null);
+    assert(notAcceptable != null);
+    assert(requestTimeout != null);
+    assert(sendTimeout != null);
+    assert(connectTimeout != null);
+    assert(conflict != null);
+    assert(internalServerError != null);
+    assert(notImplemented != null);
+    assert(serviceUnavailable != null);
+    assert(noInternetConnection != null);
+    assert(formatException != null);
+    assert(unableToProcess != null);
+    assert(defaultError != null);
+    assert(unexpectedError != null);
+    return connectTimeout();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object>({
+    TResult requestCancelled(),
+    TResult unauthorizedRequest(),
+    TResult badRequest(),
+    TResult notFound(String reason),
+    TResult methodNotAllowed(),
+    TResult notAcceptable(),
+    TResult requestTimeout(),
+    TResult sendTimeout(),
+    TResult connectTimeout(),
+    TResult conflict(),
+    TResult internalServerError(),
+    TResult notImplemented(),
+    TResult serviceUnavailable(),
+    TResult noInternetConnection(),
+    TResult formatException(),
+    TResult unableToProcess(),
+    TResult defaultError(String error),
+    TResult unexpectedError(),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (connectTimeout != null) {
+      return connectTimeout();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object>({
+    @required TResult requestCancelled(RequestCancelled value),
+    @required TResult unauthorizedRequest(UnauthorizedRequest value),
+    @required TResult badRequest(BadRequest value),
+    @required TResult notFound(NotFound value),
+    @required TResult methodNotAllowed(MethodNotAllowed value),
+    @required TResult notAcceptable(NotAcceptable value),
+    @required TResult requestTimeout(RequestTimeout value),
+    @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
+    @required TResult conflict(Conflict value),
+    @required TResult internalServerError(InternalServerError value),
+    @required TResult notImplemented(NotImplemented value),
+    @required TResult serviceUnavailable(ServiceUnavailable value),
+    @required TResult noInternetConnection(NoInternetConnection value),
+    @required TResult formatException(FormatException value),
+    @required TResult unableToProcess(UnableToProcess value),
+    @required TResult defaultError(DefaultError value),
+    @required TResult unexpectedError(UnexpectedError value),
+  }) {
+    assert(requestCancelled != null);
+    assert(unauthorizedRequest != null);
+    assert(badRequest != null);
+    assert(notFound != null);
+    assert(methodNotAllowed != null);
+    assert(notAcceptable != null);
+    assert(requestTimeout != null);
+    assert(sendTimeout != null);
+    assert(connectTimeout != null);
+    assert(conflict != null);
+    assert(internalServerError != null);
+    assert(notImplemented != null);
+    assert(serviceUnavailable != null);
+    assert(noInternetConnection != null);
+    assert(formatException != null);
+    assert(unableToProcess != null);
+    assert(defaultError != null);
+    assert(unexpectedError != null);
+    return connectTimeout(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object>({
+    TResult requestCancelled(RequestCancelled value),
+    TResult unauthorizedRequest(UnauthorizedRequest value),
+    TResult badRequest(BadRequest value),
+    TResult notFound(NotFound value),
+    TResult methodNotAllowed(MethodNotAllowed value),
+    TResult notAcceptable(NotAcceptable value),
+    TResult requestTimeout(RequestTimeout value),
+    TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
+    TResult conflict(Conflict value),
+    TResult internalServerError(InternalServerError value),
+    TResult notImplemented(NotImplemented value),
+    TResult serviceUnavailable(ServiceUnavailable value),
+    TResult noInternetConnection(NoInternetConnection value),
+    TResult formatException(FormatException value),
+    TResult unableToProcess(UnableToProcess value),
+    TResult defaultError(DefaultError value),
+    TResult unexpectedError(UnexpectedError value),
+    @required TResult orElse(),
+  }) {
+    assert(orElse != null);
+    if (connectTimeout != null) {
+      return connectTimeout(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ConnectTimeout implements NetworkExceptions {
+  const factory ConnectTimeout() = _$ConnectTimeout;
 }
 
 /// @nodoc
@@ -1724,6 +1968,7 @@ class _$Conflict implements Conflict {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -1742,6 +1987,7 @@ class _$Conflict implements Conflict {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -1765,6 +2011,7 @@ class _$Conflict implements Conflict {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -1794,6 +2041,7 @@ class _$Conflict implements Conflict {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -1812,6 +2060,7 @@ class _$Conflict implements Conflict {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -1835,6 +2084,7 @@ class _$Conflict implements Conflict {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -1905,6 +2155,7 @@ class _$InternalServerError implements InternalServerError {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -1923,6 +2174,7 @@ class _$InternalServerError implements InternalServerError {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -1946,6 +2198,7 @@ class _$InternalServerError implements InternalServerError {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -1975,6 +2228,7 @@ class _$InternalServerError implements InternalServerError {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -1993,6 +2247,7 @@ class _$InternalServerError implements InternalServerError {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -2016,6 +2271,7 @@ class _$InternalServerError implements InternalServerError {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -2086,6 +2342,7 @@ class _$NotImplemented implements NotImplemented {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -2104,6 +2361,7 @@ class _$NotImplemented implements NotImplemented {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -2127,6 +2385,7 @@ class _$NotImplemented implements NotImplemented {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -2156,6 +2415,7 @@ class _$NotImplemented implements NotImplemented {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -2174,6 +2434,7 @@ class _$NotImplemented implements NotImplemented {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -2197,6 +2458,7 @@ class _$NotImplemented implements NotImplemented {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -2267,6 +2529,7 @@ class _$ServiceUnavailable implements ServiceUnavailable {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -2285,6 +2548,7 @@ class _$ServiceUnavailable implements ServiceUnavailable {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -2308,6 +2572,7 @@ class _$ServiceUnavailable implements ServiceUnavailable {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -2337,6 +2602,7 @@ class _$ServiceUnavailable implements ServiceUnavailable {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -2355,6 +2621,7 @@ class _$ServiceUnavailable implements ServiceUnavailable {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -2378,6 +2645,7 @@ class _$ServiceUnavailable implements ServiceUnavailable {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -2448,6 +2716,7 @@ class _$NoInternetConnection implements NoInternetConnection {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -2466,6 +2735,7 @@ class _$NoInternetConnection implements NoInternetConnection {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -2489,6 +2759,7 @@ class _$NoInternetConnection implements NoInternetConnection {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -2518,6 +2789,7 @@ class _$NoInternetConnection implements NoInternetConnection {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -2536,6 +2808,7 @@ class _$NoInternetConnection implements NoInternetConnection {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -2559,6 +2832,7 @@ class _$NoInternetConnection implements NoInternetConnection {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -2629,6 +2903,7 @@ class _$FormatException implements FormatException {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -2647,6 +2922,7 @@ class _$FormatException implements FormatException {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -2670,6 +2946,7 @@ class _$FormatException implements FormatException {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -2699,6 +2976,7 @@ class _$FormatException implements FormatException {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -2717,6 +2995,7 @@ class _$FormatException implements FormatException {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -2740,6 +3019,7 @@ class _$FormatException implements FormatException {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -2810,6 +3090,7 @@ class _$UnableToProcess implements UnableToProcess {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -2828,6 +3109,7 @@ class _$UnableToProcess implements UnableToProcess {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -2851,6 +3133,7 @@ class _$UnableToProcess implements UnableToProcess {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -2880,6 +3163,7 @@ class _$UnableToProcess implements UnableToProcess {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -2898,6 +3182,7 @@ class _$UnableToProcess implements UnableToProcess {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -2921,6 +3206,7 @@ class _$UnableToProcess implements UnableToProcess {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -3013,6 +3299,7 @@ class _$DefaultError implements DefaultError {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -3031,6 +3318,7 @@ class _$DefaultError implements DefaultError {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -3054,6 +3342,7 @@ class _$DefaultError implements DefaultError {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -3083,6 +3372,7 @@ class _$DefaultError implements DefaultError {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -3101,6 +3391,7 @@ class _$DefaultError implements DefaultError {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -3124,6 +3415,7 @@ class _$DefaultError implements DefaultError {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),
@@ -3198,6 +3490,7 @@ class _$UnexpectedError implements UnexpectedError {
     @required TResult notAcceptable(),
     @required TResult requestTimeout(),
     @required TResult sendTimeout(),
+    @required TResult connectTimeout(),
     @required TResult conflict(),
     @required TResult internalServerError(),
     @required TResult notImplemented(),
@@ -3216,6 +3509,7 @@ class _$UnexpectedError implements UnexpectedError {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -3239,6 +3533,7 @@ class _$UnexpectedError implements UnexpectedError {
     TResult notAcceptable(),
     TResult requestTimeout(),
     TResult sendTimeout(),
+    TResult connectTimeout(),
     TResult conflict(),
     TResult internalServerError(),
     TResult notImplemented(),
@@ -3268,6 +3563,7 @@ class _$UnexpectedError implements UnexpectedError {
     @required TResult notAcceptable(NotAcceptable value),
     @required TResult requestTimeout(RequestTimeout value),
     @required TResult sendTimeout(SendTimeout value),
+    @required TResult connectTimeout(ConnectTimeout value),
     @required TResult conflict(Conflict value),
     @required TResult internalServerError(InternalServerError value),
     @required TResult notImplemented(NotImplemented value),
@@ -3286,6 +3582,7 @@ class _$UnexpectedError implements UnexpectedError {
     assert(notAcceptable != null);
     assert(requestTimeout != null);
     assert(sendTimeout != null);
+    assert(connectTimeout != null);
     assert(conflict != null);
     assert(internalServerError != null);
     assert(notImplemented != null);
@@ -3309,6 +3606,7 @@ class _$UnexpectedError implements UnexpectedError {
     TResult notAcceptable(NotAcceptable value),
     TResult requestTimeout(RequestTimeout value),
     TResult sendTimeout(SendTimeout value),
+    TResult connectTimeout(ConnectTimeout value),
     TResult conflict(Conflict value),
     TResult internalServerError(InternalServerError value),
     TResult notImplemented(NotImplemented value),

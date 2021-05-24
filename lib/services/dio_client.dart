@@ -56,8 +56,8 @@ DioClient {
         onReceiveProgress: onReceiveProgress,
       );
       return response.data;
-    } on SocketException catch (e) {
-      throw SocketException(e.toString());
+    // } on SocketException catch (e) {
+    //   throw SocketException(e.toString());
     } on FormatException catch (_) {
       throw FormatException("Unable to process the data");
     } catch (e) {

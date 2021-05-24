@@ -12,25 +12,25 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Future<void> initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 1), () {
+    Future.delayed(Duration(seconds: 2), () {
       _pressFloatingActionbutton();
     });
   }
 
   _pressFloatingActionbutton() async {
-    var connectivityResult = await (Connectivity().checkConnectivity());
+    // var connectivityResult = await (Connectivity().checkConnectivity());
 
-    if (connectivityResult == ConnectivityResult.none) {
-      Navigator.pushNamed(
-        context,
-        '/no_connection',
-      );
-    } else {
+    // if (connectivityResult == ConnectivityResult.none) {
+    //   Navigator.pushNamed(
+    //     context,
+    //     '/no_connection',
+    //   );
+    // } else {
       Navigator.pushNamed(
         context,
         '/home',
       );
-    }
+    // }
   }
 
   @override
